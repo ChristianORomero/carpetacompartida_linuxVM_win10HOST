@@ -38,9 +38,11 @@ sudo reboot
     - Haz clic en el icono de carpeta con el `+`
     - **Ruta de la carpeta**: selecciona la carpeta en el host que quieres usar para compartir archivos o crea una nueva (ej; `C:\Users\Cristian\KaliShare`)
     - **Nombre de la carpeta**: por ejemplo `KaliShare`
+      
         ![](/imgs/2.png)
         
     - Marca **Montaje automático - Auto-mount**
+      
     ![](/imgs/3.png)
     
     - Marca **Hacer permanente**
