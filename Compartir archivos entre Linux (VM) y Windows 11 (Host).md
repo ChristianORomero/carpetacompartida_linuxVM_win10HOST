@@ -38,10 +38,10 @@ sudo reboot
     - Haz clic en el icono de carpeta con el `+`
     - **Ruta de la carpeta**: selecciona la carpeta en el host que quieres usar para compartir archivos o crea una nueva (ej; `C:\Users\Cristian\KaliShare`)
     - **Nombre de la carpeta**: por ejemplo `KaliShare`
-        ![[Notas/imgs/2.png]]
+        ![](/imgs/2.png)
         
     - Marca **Montaje automático - Auto-mount**
-    - ![[Notas/imgs/3.png]]
+    ![](/imgs/3.png)
     
     - Marca **Hacer permanente**
         
@@ -50,7 +50,7 @@ sudo reboot
 
 - Cambiamos la distribución de teclado rápidamente para esta sesión a español y comprobamos que se ha montado correctamente la carpeta compartida:
 
-![[Notas/imgs/4.png]]
+![](/imgs/4.png)
 
 - Puede ocurrir que por permisos no te permite acceder a la carpeta compartida, ejecuta este comando que añade nuestro usuario al grupo "vboxsf", lo que nos da permisos de acceso y modificación de archivos en estas carpetas compartidas (requiere cerrar sesión o reinicio posterior):
 
@@ -67,11 +67,11 @@ sudo reboot
 
 - Si por ejemplo quiero pasar esta carpeta con scripts de bash de diagnóstico a PC Host (Win10) desde dónde los he creado (Kali Linux) usaremos la carpeta compartida que hemos creado previamente:
 
-![[Notas/imgs/5.png]]
+![](/imgs/5.png)
 
 - Al crear los scripts y la carpeta directamente en la carpeta compartida que hemos montado, automáticamente desde el equipo host tengo acceso directo
 
-![[Notas/imgs/6.png]]
+![](/imgs/6.png)
 
 - Si por lo que sea he trabajado en otro directorio diferente a la carpeta compartida podemos pasar los archivos de forma fácil de la siguiente manera:
 
@@ -85,12 +85,12 @@ cp -r ~/ruta/scripts /media/sf_KaliShare/
 ls /media/ | grep sf
 ```
 
-![[Notas/imgs/7.png]]
+![](/imgs/7.png)
 
 Si siguiese sin aparecer, comprueba lo siguiente:
 
 - Que las **Guest Additions** de VB estén instaladas correctamente
-![[Notas/imgs/8.png]]
+![](/imgs/8.png)
 
 - Que marcaste **"Montaje automático"** o "Automount"
 - Que la carpeta está marcada como **permanente**
